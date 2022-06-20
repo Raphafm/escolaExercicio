@@ -10,7 +10,6 @@ import java.util.Scanner;
 public class EnviarBoletim {
     public static void executar(Scanner sc, Aluno aluno) {
         do {
-
             System.out.println("Deseja enviar esse boletim?");
             System.out.println("Digite 1 para sim e 2 para não");
             System.out.print("Resposta:");

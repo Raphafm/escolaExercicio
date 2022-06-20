@@ -11,7 +11,6 @@ public class MenuEnvioControl {
     public static void executar (Scanner sc, Aluno aluno) {
         MenuEnvio.executar();
 
-
         String opcao = sc.nextLine();
         switch (opcao) {
             case "0":

@@ -6,8 +6,6 @@ public class RepositorioAlunos {
 
     private static ArrayList<Aluno> listaAlunos;
 
-
-
     public static void inicialziar(){
         listaAlunos = new ArrayList<>();
         ArrayList<Materia> boletim1 = new ArrayList<>();
@@ -22,6 +20,4 @@ public class RepositorioAlunos {
     public static ArrayList<Aluno> getListaAlunos() {
         return listaAlunos;
     }
-
-
 }

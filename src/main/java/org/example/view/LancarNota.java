@@ -16,7 +16,6 @@ public class LancarNota {
         sc.nextLine();
 
         aluno.getBoletim().add(new Materia(nome, nota));
-
         continuarLancando(sc, aluno);
     }
 
@@ -25,7 +24,6 @@ public class LancarNota {
             System.out.println("Digite 1 para continuar lançando notas");
             System.out.println("Digite 2 para voltar para o menu principal");
             String opcao = sc.nextLine();
-
             if (Objects.equals(opcao, "1")) {
                 LancarNota.executar(sc, aluno);
                 return;
