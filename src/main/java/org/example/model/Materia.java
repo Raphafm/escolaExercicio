@@ -2,9 +2,9 @@ package org.example.model;
 
 public class Materia implements Comparable<Materia> {
     private final String nome;
-    private final int nota;
+    private final double nota;
 
-    public Materia(String nome, int nota) {
+    public Materia(String nome, double nota) {
         this.nome = nome;
         this.nota = nota;
     }
@@ -13,7 +13,7 @@ public class Materia implements Comparable<Materia> {
         return nome;
     }
 
-    public int getNota() {
+    public double getNota() {
         return nota;
     }
 

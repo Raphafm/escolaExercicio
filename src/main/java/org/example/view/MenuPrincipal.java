@@ -7,7 +7,7 @@ public class MenuPrincipal {
         System.out.println("1 - Cadastrar um aluno");
         System.out.println("2 - Lançar a nota de um aluno");
         System.out.println("3 - Exibir o boletim e enviar boletim");
-        System.out.println("4 - Lista de boletim a ser enviado");
+        System.out.print("Opção: ");
     }
 
     public static void exit () {

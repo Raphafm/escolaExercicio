@@ -9,10 +9,6 @@ import java.util.Scanner;
 
 public class EnviarBoletim {
     public static void executar(Scanner sc, Aluno aluno) {
-        verificarEnvio(sc, aluno);
-    }
-
-    private static void verificarEnvio(Scanner sc, Aluno aluno) {
         do {
 
             System.out.println("Deseja enviar esse boletim?");
@@ -22,13 +18,14 @@ public class EnviarBoletim {
 
             if (Objects.equals(opcao, "1")) {
                 MenuEnvioControl.executar(sc, aluno);
+                return;
             } else if (Objects.equals(opcao, "2")) {
                 System.out.println("Voltando para o menu principal");
                 MenuPrincipalControl.run(sc);
+                return;
             } else {
                 System.out.println("Opção invalida, tente novamente");
             }
         } while (true);
-
     }
 }

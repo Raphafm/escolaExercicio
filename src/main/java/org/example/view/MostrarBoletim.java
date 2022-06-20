@@ -9,7 +9,7 @@ public class MostrarBoletim {
         System.out.printf("%-20s %-20s %n%n", aluno.getNome(), aluno.getMatricula());
         System.out.printf("%-20s %-20s %n", "Materia", "Nota");
         for (int i = 0; i < aluno.getBoletim().size(); i++) {
-            System.out.printf("%-20s %-20d %n", aluno.getBoletim().get(i).getNome(), aluno.getBoletim().get(i).getNota());
+            System.out.printf("%-20s %-20.2f %n", aluno.getBoletim().get(i).getNome(), aluno.getBoletim().get(i).getNota());
         }
 
     }

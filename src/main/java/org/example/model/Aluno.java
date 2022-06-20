@@ -27,6 +27,6 @@ public class Aluno {
     }
 
     public void enviarParaLista(Aluno aluno) {
-        RepositorioAlunos.adicionarAlunoListaImprimir(aluno);
+        System.out.printf("O boletim do aluno %s foi enviado com sucesso para a impressão %n", this.getNome());
     }
 }

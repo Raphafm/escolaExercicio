@@ -17,7 +17,6 @@ public class MenuPrincipalControl {
             case "1":
                 Aluno aluno = CadastrarAluno.run(sc);
                 RepositorioAlunos.adicionarAluno(aluno);
-                RepositorioAlunos.adicionarAlunoListaIndefinida(aluno);
                 break;
             case "2":
                 LancarNota.executar(sc, EscolherAluno.executar(sc, RepositorioAlunos.getListaAlunos()));
@@ -26,9 +25,6 @@ public class MenuPrincipalControl {
                 aluno = EscolherAluno.executar(sc, RepositorioAlunos.getListaAlunos());
                 MostrarBoletim.executar(aluno);
                 EnviarBoletim.executar(sc, aluno);
-                break;
-            case "4":
-                System.out.println("Ver lista");
                 break;
             default:
                 System.out.println("Opção invalida, tente novamente");

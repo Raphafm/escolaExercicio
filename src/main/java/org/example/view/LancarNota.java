@@ -1,8 +1,10 @@
 package org.example.view;
 
+import org.example.controller.ValidarNumero;
 import org.example.model.Aluno;
 import org.example.model.Materia;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class LancarNota {
@@ -10,7 +12,8 @@ public class LancarNota {
         System.out.println("Qual o nome da materia?");
         String nome = sc.nextLine();
         System.out.println("Qual foi a nota do aluno nessa materia");
-        int nota = sc.nextInt();
+        double nota = ValidarNumero.executar(sc);
+        sc.nextLine();
 
         aluno.getBoletim().add(new Materia(nome, nota));
 
@@ -21,12 +24,12 @@ public class LancarNota {
         do {
             System.out.println("Digite 1 para continuar lançando notas");
             System.out.println("Digite 2 para voltar para o menu principal");
-            int opcao = sc.nextInt();
-            sc.nextLine();
-            if (opcao == 1) {
+            String opcao = sc.nextLine();
+
+            if (Objects.equals(opcao, "1")) {
                 LancarNota.executar(sc, aluno);
                 return;
-            } else if (opcao == 2) {
+            } else if (Objects.equals(opcao, "2")) {
                 return;
             } else {
                 System.out.println("Opcao invalida, digite novamente");

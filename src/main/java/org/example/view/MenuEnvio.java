@@ -7,6 +7,7 @@ public class MenuEnvio {
         System.out.println("1 - Email");
         System.out.println("2 - Mensagem no celular");
         System.out.println("3 - Imprimir");
+        System.out.print("Opção: ");
     }
 
     public static void exit () {
